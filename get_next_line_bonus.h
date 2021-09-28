@@ -6,12 +6,12 @@
 /*   By: mirueta- <mirueta-@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/28 13:00:47 by mirueta-          #+#    #+#             */
-/*   Updated: 2021/09/28 13:00:55 by mirueta-         ###   ########.fr       */
+/*   Updated: 2021/09/28 15:18:57 by mirueta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # include <fcntl.h>
 # include <unistd.h>

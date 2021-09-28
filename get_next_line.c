@@ -6,7 +6,7 @@
 /*   By: mirueta- <mirueta-@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 18:25:55 by mirueta-          #+#    #+#             */
-/*   Updated: 2021/09/28 12:17:09 by mirueta-         ###   ########.fr       */
+/*   Updated: 2021/09/28 15:19:58 by mirueta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ char	*ft_read_to_leftxt(int fd, char *leftxt)
 	free(buff);
 	return (leftxt);
 }
+
 char	*ft_getline(char *leftxt)
 {
 	int		i;
@@ -62,6 +63,7 @@ char	*ft_getline(char *leftxt)
 	str[i] = '\0';
 	return (str);
 }
+
 char	*ft_new_leftxt(char *leftxt)
 {
 	int		i;
@@ -87,6 +89,7 @@ char	*ft_new_leftxt(char *leftxt)
 	free(leftxt);
 	return (str);
 }
+
 char	*get_next_line(int fd)
 {
 	static char	*leftxt;

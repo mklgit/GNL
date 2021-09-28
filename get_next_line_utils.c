@@ -6,7 +6,7 @@
 /*   By: mirueta- <mirueta-@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 18:27:05 by mirueta-          #+#    #+#             */
-/*   Updated: 2021/09/28 12:56:30 by mirueta-         ###   ########.fr       */
+/*   Updated: 2021/09/28 15:42:53 by mirueta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,14 +60,10 @@ char	*ft_strjoin(char *leftxt, char *buff)
 	str = malloc(sizeof(char) * ((ft_strlen(leftxt) + ft_strlen(buff)) + 1));
 	if (str == NULL)
 		return (NULL);
-	i = 0;
+	i = -1;
 	j = 0;
-	if (leftxt)
-		while (leftxt[i] != '\0')
-		{
-			str[i] = leftxt[i];
-			i++;
-		}
+	while (leftxt[++i] != '\0')
+		str[i] = leftxt[i];
 	while (buff[j] != '\0')
 		str[i++] = buff[j++];
 	str[ft_strlen(leftxt) + ft_strlen(buff)] = '\0';
